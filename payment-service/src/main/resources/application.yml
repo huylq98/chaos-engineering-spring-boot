@@ -4,5 +4,18 @@ spring:
   docker:
     compose:
       file: payment-service/compose.yaml
-server:
-  port: 8080
+management:
+  endpoint:
+    chaosmonkey:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - chaosmonkey
+accounting-service:
+  url: http://localhost:8081
+third-party-service:
+  url: http://localhost:8082

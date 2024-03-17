@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: third-party-service
+  docker:
+    compose:
+      file: third-party-service/compose.yaml
+server:
+  port: 8082

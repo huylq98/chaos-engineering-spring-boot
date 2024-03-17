@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: accounting-service
+  docker:
+    compose:
+      file: accounting-service/compose.yaml
+server:
+  port: 8081

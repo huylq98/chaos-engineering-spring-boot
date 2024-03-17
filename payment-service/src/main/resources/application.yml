@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: payment-service
+  docker:
+    compose:
+      file: payment-service/compose.yaml
+server:
+  port: 8080

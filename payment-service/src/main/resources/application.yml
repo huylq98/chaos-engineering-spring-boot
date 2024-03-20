@@ -1,6 +1,8 @@
 spring:
   application:
     name: payment-service
+  profiles:
+    active: chaos-monkey
   docker:
     compose:
       file: payment-service/compose.yaml
